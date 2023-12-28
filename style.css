@@ -1,0 +1,288 @@
+*{
+  margin: 0;
+  padding:0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;  
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* particleground demo */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #000010;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+}
+
+#particles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#intro {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  padding: 0 10px;
+  width: 100%;
+  text-align: center;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 120;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+h1::after {
+  content: '';
+  width: 80px;
+  display: block;
+  background: #fff;
+  height: 10px;
+  margin: 30px auto;
+  line-height: 1.1;
+}
+p {
+  margin: 0 0 30px 0;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 100px) {
+  h1 {
+    font-size: 15px;
+  }
+  h1::after {
+    height: 8px;
+  }
+}
+
+@media only screen and (max-width: 100px) {
+  #intro {
+    padding: 0 10px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  h1::after {
+    height: 6px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 100px) {
+  h1 {
+    font-size: 15px;
+  }
+  h1::after {
+    height: 4px;
+  }
+}
+
+
+
+.heading{
+  font-size: 60px;
+}
+
+
+/*  */
+.main{
+  display: grid;
+  font-size: 40px;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.main p{
+  margin: 0;
+  font-size: 25px;
+  font-family: monospace;
+  letter-spacing: 3px;
+  line-height: 3;
+}
+
+
+/* navigation bar */
+ul{
+  list-style-type: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-evenly;
+}
+
+
+li a,.dropbtn{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 5px 50px;
+}
+
+li a:hover, .dropdown:hover {
+  background-color: #530cb1
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color:  #474b4f;
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features h3 {
+  color: var(--white);
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.features h6 {
+  color: var(--gray);
+  font-size: 1rem;
+  margin-bottom: 4rem;
+}
+
+.feature {
+  background-color: #3c9783;
+  display: flex;
+  border-radius: 3rem;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  box-shadow: 10px 10px 10px rgba(105, 145, 14, 0.5);
+}
+
+.feature .content {
+  padding: 4rem;
+  flex: 1;
+}
+
+.feature .content i {
+  color: var(--dark-purple);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.feature .content h2 {
+  color: rgb(225, 226, 232);
+  margin-bottom: 3rem;
+}
+
+.feature .content p {
+  color: var(--gray);
+  font-size: 1.2rem;
+  width: 80%;
+  line-height: 3;
+}
+
+.feature img {
+  flex: 1;
+  max-width: 50%;
+}
+.cta {
+  font-family: inherit;
+  padding: 1rem 4rem;
+  border: none;
+  color: rgb(36, 56, 92);
+  border-radius: 4rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.hero {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  width: 40%;
+  text-align: center;
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+
+
+
+
+
